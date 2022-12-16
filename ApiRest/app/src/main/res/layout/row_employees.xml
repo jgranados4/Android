@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            >
+
+            <TextView
+                android:id="@+id/prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/teal_200"
+                tools:text="A" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="No Name" />
+
+        <TextView
+            android:id="@+id/apellido"
+            android:layout_width="201dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/teal_200"
+            tools:text="apellido" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="201dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/teal_200"
+            tools:text="sin@mail.com" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
