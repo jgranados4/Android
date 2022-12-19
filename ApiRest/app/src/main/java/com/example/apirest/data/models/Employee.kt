@@ -5,8 +5,8 @@ data class Employee(
     @SerializedName("id")
     var id: Int,
 
-    @SerializedName("name")
-    var name: String,
+    @SerializedName("nombre")
+    var nombre: String,
 
     @SerializedName("apellido")
     var apellido: String,

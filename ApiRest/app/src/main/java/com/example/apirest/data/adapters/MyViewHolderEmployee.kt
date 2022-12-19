@@ -19,14 +19,14 @@ open class MyViewHolderEmployee(itemView: View) : RecyclerView.ViewHolder(itemVi
         apellido=itemView.findViewById(R.id.apellido)
         email = itemView.findViewById(R.id.email)
 
-        name.text = employee?.name
+        name.text = employee?.nombre
         prefix.text = employee.id.toString()
         apellido.text=employee.apellido
         email.text = employee?.email
 
 
         itemView.setOnClickListener {
-            MyMessages.toast(itemView.context, employee?.name.toString())
+            MyMessages.toast(itemView.context, employee?.nombre.toString())
             val intent = Intent(itemView.context, ventana2::class.java)
             intent.putExtra("per_id", name.id)
             itemView.context.startActivity(intent)

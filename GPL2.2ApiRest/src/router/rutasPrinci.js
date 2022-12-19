@@ -4,7 +4,7 @@ const router = express.Router();
 
 //!rutas
 router.get('/',UseController.list);
-router.get('/get_dato',UseController.get);
+router.get('/get_dato/:id',UseController.get);
 router.post('/add_dato',UseController.save);
 router.put('/update_dato/:id',UseController.update);
 router.delete('/delete_dato/:id',UseController.delete);
