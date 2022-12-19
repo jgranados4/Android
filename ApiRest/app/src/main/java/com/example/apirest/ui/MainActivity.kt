@@ -25,14 +25,20 @@ class MainActivity : AppCompatActivity() {
     var datalist = ArrayList<Employee>()
     lateinit var recyclerview: RecyclerView
     lateinit var adpater: RecyclerAdapter
+
+    override fun onResume() {
+        super.onResume()
+        CoroutineScope(Dispatchers.IO).launch {
+            cargarDatos()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         apiCliente = ApiClient()
         recyclerview = findViewById(R.id.RecyclerIni)
-        CoroutineScope(Dispatchers.IO).launch {
-            cargarDatos()
-        }
+
 
     }
 
